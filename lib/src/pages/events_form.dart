@@ -47,7 +47,7 @@ class EventsFormPage extends State<EventsForm> {
               TextField(
                 decoration: InputDecoration(
                   labelText: 'Nombre',
-                  hintText: 'Ingres unb tiulo',
+                  hintText: 'Ingrese un tiulo',
                   helperText: '',
                   fillColor: Colors.white,
                   filled: true,
@@ -110,7 +110,7 @@ class EventsFormPage extends State<EventsForm> {
                
               TextField(
                 decoration: InputDecoration(
-                  labelText: 'Fecha fin',
+                  labelText: 'Correo electrónico',
                   hintText: 'Ingrese su correo electrónico',
                   helperText: '',
                   fillColor: Colors.white,

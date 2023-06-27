@@ -67,6 +67,13 @@ class Nav extends StatelessWidget {
               Navigator.pushNamed(context, '/FAQ')
             }
           ),
+          ListTile(
+            leading: Icon(Icons.qr_code),
+            title: Text('Lector Qr'),
+            onTap: () => {
+              Navigator.pushNamed(context, '/Qr')
+            }
+          ),
         ],
       ),
     );
