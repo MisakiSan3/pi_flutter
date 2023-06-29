@@ -25,7 +25,7 @@ class _ServiciosPagesState extends State<ServiciosPages> {
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 77, 55, 201),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
       ),
       body: Center(
         child: Column(
@@ -34,17 +34,17 @@ class _ServiciosPagesState extends State<ServiciosPages> {
               height: 50.0,
             ),
             Text(
-              'Bienvenido Usuario T800',
+              'Bienvenido Randy',
               style: const TextStyle(
                 fontSize: 35.0,
-                color: Color.fromARGB(255, 78, 47, 163),
+                color: Color.fromARGB(255, 91, 48, 90),
               ),
             ),
             const SizedBox(
               child: Image(
                 image: AssetImage(
-                    'assets/images/descarga.png'),
-                height: 100,
+                    'assets/images/logo.png'),
+                height: 250,
                 width: 300,
               ),
             ),
@@ -52,7 +52,7 @@ class _ServiciosPagesState extends State<ServiciosPages> {
               'Esta Es Tu Agenda Virtual',
               style: const TextStyle(
                 fontSize: 35.0,
-                color: Color.fromARGB(255, 78, 47, 163),
+                color: Color.fromARGB(255, 91, 48, 90),
               ),
             ),
             Padding(
@@ -60,14 +60,18 @@ class _ServiciosPagesState extends State<ServiciosPages> {
               child: Row(
                 children: [
                   Expanded(child: CircleAvatar(
+                    backgroundColor: Color.fromARGB(255, 91, 48, 90),
                     child: IconButton(onPressed: (){
                       Navigator.pushNamed(context, '/Calendar');
-                    }, icon: Icon(Icons.calendar_month)),
+                    }, icon: Icon(Icons.calendar_month),
+                    color: Color.fromARGB(255, 247, 247, 247),),
                   )),
                    Expanded(child: CircleAvatar(
+                    backgroundColor: Color.fromARGB(255, 91, 48, 90),
                     child: IconButton(onPressed: (){
                       Navigator.pushNamed(context, '/teachers');
-                    }, icon: Icon(Icons.person_search)),
+                    }, icon: Icon(Icons.person_search),
+                    color: Color.fromARGB(255, 247, 247, 247),),
                   )),
                 ],
               ),
@@ -84,14 +88,20 @@ class _ServiciosPagesState extends State<ServiciosPages> {
               child: Row(
                 children: [
                   Expanded(child: CircleAvatar(
+                     backgroundColor: Color.fromARGB(255, 91, 48, 90),
                     child: IconButton(onPressed: (){
                       Navigator.pushNamed(context, '/Subjects');
-                    }, icon: Icon(Icons.book)),
+                    }, icon: Icon(Icons.book),
+                    color: Color.fromARGB(255, 247, 247, 247),),
                   )),
                    Expanded(child: CircleAvatar(
+                     backgroundColor: Color.fromARGB(255, 91, 48, 90),
                     child: IconButton(onPressed: (){
                       Navigator.pushNamed(context, '/FAQ');
-                    }, icon: Icon(Icons.question_answer)),
+                    }, icon: Icon(Icons.question_answer),
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    
+                    ),
                   )),
                 ],
               ),

@@ -13,6 +13,7 @@ class Footer extends StatelessWidget {
         children: [
           FooterItem(
             icon: Icons.home,
+            
             label: 'Inicio',
             onPressed: () {
               // Navegar a la página de inicio

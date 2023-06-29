@@ -25,7 +25,7 @@ class _CalendarPageState extends State<CalendarPage> {
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 77, 55, 201),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
       ),
       body: Container(
 
@@ -38,7 +38,12 @@ class _CalendarPageState extends State<CalendarPage> {
                firstDay: DateTime.utc(2010, 10, 16), lastDay: DateTime.utc(2030, 3, 14)),
               ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(255, 85, 54, 224),),
+               
+                        shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                        primary: Color.fromARGB(255, 0, 0, 0),
+                ),
               onPressed:(){
                 Navigator.popAndPushNamed(context, '/EventsForm');},
                 child:Text ('Agregar'),

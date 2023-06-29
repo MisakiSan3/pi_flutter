@@ -24,54 +24,67 @@ class _HomePagesState extends State<HomePages> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Color.fromARGB(255, 77, 55, 201),
-                  Color.fromARGB(255, 27, 27, 27),])),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 224, 75, 90),
+                  Color.fromARGB(255, 91, 48, 90),])),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                      radius: 100.0,
-                      backgroundColor: Colors.amberAccent,
-                      backgroundImage: AssetImage('assets/images/descarga.png'),
+                      radius: 200.0,
+                      backgroundColor: Colors.transparent,
+                      backgroundImage: AssetImage('assets/images/logo.png'),
               ),
-                SizedBox(
-                  height: 25.0,
-                ),
-                Text(
-                    'Bienvenido a Kuya Yana,Usuario T800',
+                /*SizedBox(
+                  height: 5.0,
+                ),*/
+                /*Text(
+                    'Tu Agenda Virtual',
                     textAlign: TextAlign.left,
                     style: const TextStyle(
-                      fontSize: 15.0,
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 50.0,
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
-                  ),
+                  ),*/
+                /*SizedBox(
+                  height: 5.0,
+                ),*/
                 SizedBox(
-                  height: 25.0,
-                ),
-                SizedBox(
-                    width: 300,
+                    width: 200,
                     height: 50.0,
-                    child: ElevatedButton(
+                    child: ElevatedButton.icon(
                      onPressed:(){
                        Navigator.pushNamed(context, '/Login');},
-                       child:Text ('Iniciar Sesión'),
+                       icon: Icon(Icons.login),
+                       label:Text ('Iniciar Sesión'),
                        style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 85, 54, 224),),
+                        shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                        primary: Color.fromARGB(255, 0, 0, 0),),
                       ),
                   ),
                   SizedBox(
                   height: 25.0,
                 ),
                 SizedBox(
-                  width: 300,
+                  width: 200,
                 height: 50.0,
-                  child: ElevatedButton(
+                  child: ElevatedButton.icon(
                                      onPressed:(){
                    Navigator.pushNamed(context, '/Register');},
-                   child:Text ('No tienes cuenta '),
+                   icon: Icon(Icons.app_registration_rounded),
+                   
+                   label:Text ('Registrate'),
                    style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 85, 54, 224),),
+                     shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                    primary: Color.fromARGB(255, 0, 0, 0),),
                   ),
                 ),
             ],

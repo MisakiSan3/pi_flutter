@@ -16,7 +16,7 @@ class EventsFormPage extends State<EventsForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 85, 54, 224),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
         title: Text('Registrar evento'),
       ),
       drawer: Nav(),
@@ -26,8 +26,12 @@ class EventsFormPage extends State<EventsForm> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color.fromARGB(255, 77, 55, 201),
-                Color.fromARGB(255, 27, 27, 27),])
+                 Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 224, 75, 90),
+                  Color.fromARGB(255, 91, 48, 90),])
               ),
               
         child: ListView(    
@@ -46,6 +50,10 @@ class EventsFormPage extends State<EventsForm> {
               SizedBox(height: 25.0),
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Nombre',
                   hintText: 'Ingrese un tiulo',
                   helperText: '',
@@ -64,6 +72,10 @@ class EventsFormPage extends State<EventsForm> {
                       child: TextField(
                       controller: dateinput, //editing controller of this TextField
                       decoration: InputDecoration( 
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                          suffixIcon: Icon(Icons.calendar_today), //icon of text field
                          labelText: "Fecha inicio",
                          fillColor: Colors.white,
@@ -86,6 +98,10 @@ class EventsFormPage extends State<EventsForm> {
                     TextField(
                     controller: dateinput, //editing controller of this TextField
                     decoration: InputDecoration( 
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                        suffixIcon: Icon(Icons.calendar_today), //icon of text field
                        labelText: "Fecha fin",
                        fillColor: Colors.white,
@@ -110,6 +126,10 @@ class EventsFormPage extends State<EventsForm> {
                
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Correo electrónico',
                   hintText: 'Ingrese su correo electrónico',
                   helperText: '',
@@ -120,6 +140,10 @@ class EventsFormPage extends State<EventsForm> {
               ),
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Descripción',
                   hintText: 'Describa el evento',
                   helperText: '',
@@ -129,11 +153,20 @@ class EventsFormPage extends State<EventsForm> {
                 ),
                 obscureText: true,
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/Calendar');
-                },
-                child: Text('Añadir evento'),
+              SizedBox(
+                width: 150,
+                      height: 50.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/Calendar');
+                  },
+                  style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                            primary: Color.fromARGB(255, 0, 0, 0),),
+                  child: Text('Añadir evento'),
+                ),
               ),
             ],
           ),

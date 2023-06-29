@@ -13,16 +13,19 @@ class Nav extends StatelessWidget {
             accountEmail: Text('leolmini_99@hotmail.com'),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
+                
                 child: Image.asset('assets/images/descarga.png'),
               ),
             ),
+            
             decoration: BoxDecoration(
               gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color.fromARGB(255, 77, 55, 201),
-                Color.fromARGB(255, 27, 27, 27),]),
+                
+                  Color.fromARGB(255, 224, 75, 90),
+                  Color.fromARGB(255, 91, 48, 90),]),
             ),
           ),
           Container(

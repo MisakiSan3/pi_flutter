@@ -9,17 +9,18 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Perfil'),
-        backgroundColor: Color.fromARGB(255, 77, 55, 201),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            SizedBox(height: 50),
+            SizedBox(height: 100),
 
             CircleAvatar(
-              radius: 80,
-              backgroundImage: AssetImage('assets/images/descarga.png'),
+              backgroundColor: Colors.transparent,
+              radius: 90,
+              backgroundImage: AssetImage('assets/images/logo.png'),
             ),
             SizedBox(height: 50),
             Text(

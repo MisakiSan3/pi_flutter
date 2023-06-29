@@ -24,7 +24,7 @@ class _TeacherFormState extends State<TeacherForm> {
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 77, 55, 201),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
       ),
       drawer: Nav(),
        body:
@@ -34,8 +34,12 @@ class _TeacherFormState extends State<TeacherForm> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color.fromARGB(255, 77, 55, 201),
-                Color.fromARGB(255, 27, 27, 27),])
+                Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 224, 75, 90),
+                  Color.fromARGB(255, 91, 48, 90),])
               ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -109,12 +113,23 @@ class _TeacherFormState extends State<TeacherForm> {
               ),
               SizedBox(height: 16.0),
               Center(
-                child: ElevatedButton(
-                  onPressed: () {
-              
-                    Navigator.pushNamed(context, '/teachers');
-                  },
-                  child: Text('Registrar maestro'),
+                child: SizedBox(
+                  width: 200,
+                  height: 50.0,
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                              
+                      Navigator.pushNamed(context, '/teachers');
+                    },
+                    icon: Icon(Icons.app_registration),
+                    label: Text('Registrar maestro'),
+                     style: ElevatedButton.styleFrom(
+                      primary: Colors.black,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                      )
+                    ),
+                  ),
                 ),
               ),
           ],

@@ -39,6 +39,7 @@ dependencies:
   table_calendar: ^3.0.9
   sqflite: ^2.2.8+4
   qr_code_scanner: ^1.0.1
+  font_awesome_flutter: ^10.5.0
 
 dev_dependencies:
   flutter_test:

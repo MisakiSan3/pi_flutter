@@ -35,7 +35,7 @@ class _TeachersPageState extends State<TeachersPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        backgroundColor: Color.fromARGB(255, 77, 55, 201),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
         title: Text('Maestros'),
       ),
       drawer: Nav(),
@@ -80,6 +80,7 @@ class _TeachersPageState extends State<TeachersPage> {
         floatingActionButton: FloatingActionButton(onPressed: (){
           Navigator.pushNamed(context, '/TeacherForm');
         },
+        backgroundColor: Colors.red,
         child: Icon(Icons.add),
         ),
         

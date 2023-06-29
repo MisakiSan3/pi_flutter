@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -19,27 +20,31 @@ class _LoginPageState extends State<LoginPage> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Color.fromARGB(255, 77, 55, 201),
-                  Color.fromARGB(255, 27, 27, 27),])),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 255, 255, 255),
+                  Color.fromARGB(255, 224, 75, 90),
+                  Color.fromARGB(255, 91, 48, 90),])),
         child: ListView(
           children: <Widget>[
             Center(
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(50.0),
                 child: Column(
                   children: [
-                    Text(
+                    /*Text(
                       'Login',
                       style: const TextStyle(
                         fontSize: 50.0,
-                        color: Color.fromARGB(255, 255, 255, 255),
+                        color: Color.fromARGB(255, 0, 0, 0),
                       ),
-                    ),
+                    ),*/
 
                     CircleAvatar(
-                      radius: 100.0,
+                      radius: 150.0,
                       backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                      backgroundImage: AssetImage('assets/images/descarga.png'),
+                      backgroundImage: AssetImage('assets/images/logo.png'),
                     ),
                     
                     Text(
@@ -54,12 +59,18 @@ class _LoginPageState extends State<LoginPage> {
                     TextField(
 
                       decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                         labelText: 'Correo electrónico',
                         hintText: 'Ingrese su correo electrónico',
                         helperText: '',
                         fillColor: Colors.white,
-                        suffixIcon: Icon(Icons.email),
+                        prefixIcon: Icon(Icons.email),
+                        prefixIconColor: Color.fromARGB(255, 91, 48, 90),
                         filled: true,
+                        
                       ),
                     ),
 
@@ -76,60 +87,83 @@ class _LoginPageState extends State<LoginPage> {
 
                     TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Contraseña',
+                  labelStyle: TextStyle(fontWeight: FontWeight.w600),
                   hintText: 'Ingrese su contraseña',
                   helperText: '',
                   fillColor: Colors.white,
                   filled: true,
-                  suffixIcon: Icon(Icons.lock),
+                  prefixIcon: Icon(Icons.password_outlined),
+                  prefixIconColor: Color.fromARGB(255, 91, 48, 90),
+              
                 ),
                 obscureText: true,
               ),
 
-                    Divider(
+                   /* Divider(
                       height: 20.0,
-                    ),
+                    ),*/
                     SizedBox(
-                      width: 300,
-                      height: 50.0,
-                      child: ElevatedButton(
-                       onPressed:(){
-                         Navigator.pushNamed(context, '/Servicios');},
-                         child:Text ('Iniciar Sesión'),
-                         style: ElevatedButton.styleFrom(
-                          primary: Color.fromARGB(255, 85, 54, 224),),
-                        ),
-                    ),
-                      Divider(
-                      height: 20.0,
-                    ),
-                    SizedBox(
-                      width: 300,
+                      width: 200,
                       height: 50.0,
                       child: ElevatedButton.icon(
                        onPressed:(){
                          Navigator.pushNamed(context, '/Servicios');},
-                         icon: Icon(Icons.mail),
+                         icon: Icon(Icons.login),
+                         label:Text ('Iniciar Sesión'),
+                         style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                          primary: Color.fromARGB(255, 0, 0, 0),),
+                        ),
+                    ),
+                    SizedBox(
+                      height: 15.0,
+                      ),
+                     /* Divider(
+                      height: 20.0,
+                    ),*/
+                    SizedBox(
+                      width: 200,
+                      height: 50.0,
+                      child: ElevatedButton.icon(
+                       onPressed:(){
+                         Navigator.pushNamed(context, '/Servicios');},
+                         icon: FaIcon(FontAwesomeIcons.google,
+                         color: Colors.white,
+                         size: 18,),
                          label:Text ('Ingresar con Google',),
                          style: ElevatedButton.styleFrom(
-                          primary: Color.fromARGB(255, 170, 170, 170),
-                          onPrimary: Colors.black
+                          shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                          primary: Color.fromARGB(255, 0, 0, 0),
+                          onPrimary: const Color.fromARGB(255, 255, 255, 255)
                          ),
                         ),
                     ),
                       
-                      Divider(
-                      height: 20.0,
-                    ),
+                    SizedBox(
+                      height: 15.0,
+                      ),
                       SizedBox(
-                        width: 300,
+                        width:200,
                       height: 50.0,
-                        child: ElevatedButton(
+                        child: ElevatedButton.icon(
                                            onPressed:(){
                          Navigator.pushNamed(context, '/Register');},
-                         child:Text ('No tienes cuenta '),
+                         icon: Icon(Icons.app_registration),
+                         label:Text ('No tienes cuenta '),
                          style: ElevatedButton.styleFrom(
-                          primary: Color.fromARGB(255, 85, 54, 224),),
+                          shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                          primary: Color.fromARGB(255, 0, 0, 0),),
                         ),
                       ),
                         
