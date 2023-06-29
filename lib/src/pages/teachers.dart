@@ -80,7 +80,7 @@ class _TeachersPageState extends State<TeachersPage> {
         floatingActionButton: FloatingActionButton(onPressed: (){
           Navigator.pushNamed(context, '/TeacherForm');
         },
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromARGB(255, 91, 48, 90),
         child: Icon(Icons.add),
         ),
         

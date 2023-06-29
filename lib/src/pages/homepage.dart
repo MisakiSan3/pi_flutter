@@ -65,7 +65,7 @@ class _HomePagesState extends State<HomePages> {
                         shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                        primary: Color.fromARGB(255, 0, 0, 0),),
+                        primary: Color.fromARGB(255, 91, 48, 90),),
                       ),
                   ),
                   SizedBox(
@@ -84,7 +84,7 @@ class _HomePagesState extends State<HomePages> {
                      shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                    primary: Color.fromARGB(255, 0, 0, 0),),
+                    primary: Color.fromARGB(255, 91, 48, 90),),
                   ),
                 ),
             ],

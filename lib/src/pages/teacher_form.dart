@@ -147,7 +147,7 @@ class _TeacherFormState extends State<TeacherForm> {
                     icon: Icon(Icons.add),
                     label: Text('Registrar maestro'),
                      style: ElevatedButton.styleFrom(
-                      primary: Colors.black,
+                      primary: Color.fromARGB(255, 91, 48, 90),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       )

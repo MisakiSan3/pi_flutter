@@ -119,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                           shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                          primary: Color.fromARGB(255, 0, 0, 0),),
+                          primary: Color.fromARGB(255, 91, 48, 90),),
                         ),
                     ),
                     SizedBox(
@@ -142,7 +142,7 @@ class _LoginPageState extends State<LoginPage> {
                           shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                          primary: Color.fromARGB(255, 0, 0, 0),
+                          primary: Color.fromARGB(255, 91, 48, 90),
                           onPrimary: const Color.fromARGB(255, 255, 255, 255)
                          ),
                         ),
@@ -163,7 +163,7 @@ class _LoginPageState extends State<LoginPage> {
                           shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                          primary: Color.fromARGB(255, 0, 0, 0),),
+                          primary: Color.fromARGB(255, 91, 48, 90),),
                         ),
                       ),
                         

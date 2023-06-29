@@ -37,7 +37,7 @@ class _QrReaderPageState extends State<QrReaderPage> {
               color: Color.fromARGB(255, 255, 255, 255)),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 77, 55, 201),
+        backgroundColor: Color.fromARGB(255, 224, 75, 90),
       ),
       drawer: Nav(),
       body: Column(
@@ -66,7 +66,9 @@ class _QrReaderPageState extends State<QrReaderPage> {
                               await controller?.toggleFlash();
                               setState(() {});
                             },
+                            
                             child: FutureBuilder(
+                              
                               future: controller?.getFlashStatus(),
                               builder: (context, snapshot) {
                                 return Text('Flash: ${snapshot.data}');

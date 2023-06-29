@@ -45,7 +45,7 @@ class _CalendarPageState extends State<CalendarPage> {
                         shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                        primary: Color.fromARGB(255, 0, 0, 0),
+                        primary: Color.fromARGB(255, 91, 48, 90),
                 ),
               onPressed:(){
                 Navigator.popAndPushNamed(context, '/EventsForm');},

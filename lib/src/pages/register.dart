@@ -132,7 +132,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   icon: Icon(Icons.app_registration),
                   label: Text('Registrarse'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.black,
+                    primary: Color.fromARGB(255, 91, 48, 90),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
                     )

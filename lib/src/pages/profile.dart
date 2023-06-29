@@ -25,32 +25,32 @@ class ProfilePage extends StatelessWidget {
             SizedBox(height: 50),
             Text(
               'Nombre de Usuario',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             Text(
               'Randy Romero',
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 15),
             ),
             SizedBox(height: 30),
             Text(
               'Correo',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             Text(
               'leolmini_99@hotmail.com',
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 15),
             ),
             SizedBox(height: 30),
             Text(
               'Descripcion',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             Text(
               'Tengo X años ...',
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 15),
             ),
           ],
         ),

@@ -164,7 +164,7 @@ class EventsFormPage extends State<EventsForm> {
                             shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
                     ),
-                            primary: Color.fromARGB(255, 0, 0, 0),),
+                            primary: Color.fromARGB(255, 91, 48, 90),),
                   child: Text('Añadir evento'),
                 ),
               ),
