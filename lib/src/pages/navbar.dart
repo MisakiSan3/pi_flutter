@@ -12,6 +12,7 @@ class Nav extends StatelessWidget {
             accountName: Text('Randy Romero'),
             accountEmail: Text('leolmini_99@hotmail.com'),
             currentAccountPicture: CircleAvatar(
+              backgroundColor: Colors.transparent,
               child: ClipOval(
                 
                 child: Image.asset('assets/images/descarga.png'),
@@ -75,6 +76,13 @@ class Nav extends StatelessWidget {
             title: Text('Lector Qr'),
             onTap: () => {
               Navigator.pushNamed(context, '/Qr')
+            }
+          ),
+          ListTile(
+            leading: Icon(Icons.logout),
+            title: Text('Cerrar Sesión'),
+            onTap: () => {
+              Navigator.pushNamed(context, '/Home')
             }
           ),
         ],
