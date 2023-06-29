@@ -36,7 +36,10 @@ class _CalendarPageState extends State<CalendarPage> {
               
               TableCalendar(focusedDay: DateTime.now(),
                firstDay: DateTime.utc(2010, 10, 16), lastDay: DateTime.utc(2030, 3, 14)),
-              ElevatedButton(
+               SizedBox(
+                height: 20.0,
+               ),
+              ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
                
                         shape: RoundedRectangleBorder(
@@ -46,7 +49,8 @@ class _CalendarPageState extends State<CalendarPage> {
                 ),
               onPressed:(){
                 Navigator.popAndPushNamed(context, '/EventsForm');},
-                child:Text ('Agregar'),
+                icon: Icon(Icons.add),
+                label:Text ('Agregar'),
              ),
             ],
           ),

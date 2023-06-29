@@ -29,6 +29,7 @@ class _TeacherFormState extends State<TeacherForm> {
       drawer: Nav(),
        body:
         Container(
+          padding: EdgeInsets.all(25.0),
         decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
@@ -48,6 +49,10 @@ class _TeacherFormState extends State<TeacherForm> {
             SizedBox(height:25.0),
             TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Nombre Maestro',
                   hintText: 'Ingrese un nombre',
                   helperText: '',
@@ -58,6 +63,10 @@ class _TeacherFormState extends State<TeacherForm> {
               ),
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Apellido Maestro',
                   hintText: 'Ingrese un apellido',
                   helperText: '',
@@ -68,6 +77,10 @@ class _TeacherFormState extends State<TeacherForm> {
               ),
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Telf',
                   hintText: 'Ingrese un número celular',
                   helperText: '',
@@ -78,6 +91,10 @@ class _TeacherFormState extends State<TeacherForm> {
               ),
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Correo electrónico',
                   hintText: 'Ingrese su correo electrónico',
                   helperText: '',
@@ -88,6 +105,10 @@ class _TeacherFormState extends State<TeacherForm> {
               ),
               TextField(
                 decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide(width: 1)
+                        ),
                   labelText: 'Contraseña',
                   hintText: 'Ingrese su contraseña',
                   helperText: '',
@@ -98,7 +119,9 @@ class _TeacherFormState extends State<TeacherForm> {
                 obscureText: true,
               ),
               Container(
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255),
+                borderRadius: BorderRadius.circular(20.0),
+                border: Border.all(width: 1)),
                 child: DropdownButton(dropdownColor: Colors.white, items: subjects.map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
@@ -115,13 +138,13 @@ class _TeacherFormState extends State<TeacherForm> {
               Center(
                 child: SizedBox(
                   width: 200,
-                  height: 50.0,
+                  height: 45.0,
                   child: ElevatedButton.icon(
                     onPressed: () {
                               
                       Navigator.pushNamed(context, '/teachers');
                     },
-                    icon: Icon(Icons.app_registration),
+                    icon: Icon(Icons.add),
                     label: Text('Registrar maestro'),
                      style: ElevatedButton.styleFrom(
                       primary: Colors.black,
